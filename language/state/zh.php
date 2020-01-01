@@ -1,0 +1,5 @@
+<?php
+
+// Chinese
+
+return [];
