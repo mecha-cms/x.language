@@ -5,10 +5,14 @@
 return [
 
     // Common
+    'Anonymous' => 'Anonim',
     'First' => 'Awal',
+    'Hello' => 'Hai',
     'Home' => 'Beranda',
     'Last' => 'Akhir',
+    'Navigation' => 'Navigasi',
     'Next' => 'Berikutnya',
+    'None' => 'Tidak Ada',
     'Previous' => 'Sebelumnya',
 
     // Date
@@ -72,6 +76,10 @@ return [
     'Layouts' => 'Tata Letak',
     'Link' => 'Tautan',
     'Links' => 'Tautan',
+    'Log In' => 'Masuk Log',
+    'Log Out' => 'Keluar Log',
+    'Message' => 'Pesan',
+    'Messages' => 'Pesan',
     'Name' => 'Nama',
     'Names' => 'Nama',
     'Page' => 'Halaman',
@@ -101,6 +109,11 @@ return [
     'Zone' => 'Zona',
     'Zones' => 'Zona',
 
+    // Preposition(s)
+    'At' => 'Pada',
+    'In' => 'Dalam',
+    'On' => 'Di',
+
     // Action(s)
     'Accept' => 'Terima',
     'Add' => 'Tambah',
@@ -115,27 +128,55 @@ return [
     'Enter' => 'Masuk',
     'Exit' => 'Keluar',
     'New %s' => '%s Baru',
+    'Profile' => 'Profil',
     'Publish' => 'Publikasikan',
     'Reject' => 'Tolak',
     'Replace' => 'Ganti',
     'Restore' => 'Kembalikan',
+    'Share' => 'Bagikan',
+    'Sharing' => 'Berbagi',
     'Save' => 'Simpan',
     'Save as %s' => 'Simpan sebagai %s',
     'Save to %s' => 'Simpan ke %s',
     'Search' => 'Telusuri',
     'Search...' => 'Telusuri…',
+    'Table of Contents' => 'Tabel Konten',
     'Update' => 'Perbarui',
     'Update as %s' => 'Perbarui sebagai %s',
     'Upload' => 'Unggah',
     'View' => 'Tampilkan',
+
+    // Comment Counter
+    '0 Comments' => '0 Komentar',
+    '1 Comment' => '1 Komentar',
+    '%d Comment' => '%d Komentar',
+    '%d Comments' => '%d Komentar',
+    '0 Replies' => '0 Balasan',
+    '1 Reply' => '1 Balasan',
+    '%d Reply' => '%d Balasan',
+    '%d Replies' => '%d Balasan',
+
+    // View Counter
+    '0 Views' => 'Belum Ada yang Melihat',
+    '1 View' => '1 Kali Dilihat',
+    '%d View' => '%d Kali Dilihat',
+    '%d Views' => '%d Kali Dilihat',
 
     // Sentence(s)
     'Choose default page that will open after logged-in.' => 'Pilih halaman utama yang akan terbuka setelah log masuk.',
     'Choose default page that will open in the home page.' => 'Pilih halaman utama yang akan terbuka di beranda.',
     'Display name.' => 'Nama tampilan.',
     'Empty the trash folder' => 'Kosongkan folder sampah',
+    'Logged in.' => 'Berhasil masuk.',
+    'Logged out.' => 'Berhasil keluar.',
+    'Message goes here...' => 'Pesan di sini…',
+    'No comments yet.' => 'Belum ada komentar.',
+    'Posted by %s' => 'Diposting oleh %s',
+    'Powered by %s' => 'Diberdayakan oleh %s',
     'Set custom log-in path.' => 'Atur jalur log masuk kustom.',
     'Redirect to folder' => 'Arahkan ke folder',
-    'This value does not determine the I18N system on your site unless you want to make an I18N extension that depends on this value.' => 'Anda memiliki ekstensi bahasa yang terpasang. Nilai ini sekarang menentukan sistem I18N pada situs Anda.'
-
+    'This value does not determine the I18N system on your site unless you want to make an I18N extension that depends on this value.' => 'Anda memiliki ekstensi bahasa yang terpasang. Nilai ini sekarang menentukan sistem I18N pada situs Anda.',
+    'Written by %s' => 'Ditulis oleh %s',
+    'Your %s are %s.' => 'Nilai %s Anda adalah %s.',
+    'Your %s is %s.' => 'Nilai %s Anda adalah %s.'
 ];
