@@ -251,14 +251,11 @@ return [
     'Delete package immediately after extracted.' => 'Hapus paket segera setelah terekstrak.',
     'Description goes here...' => "Deskripsi di sini\u{2026}",
     'Display name.' => 'Nama tampilan.',
-    'Download current layout as a ZIP file.' => 'Unduh tata letak saat ini sebagai berkas ZIP.',
     'Empty the trash folder' => 'Kosongkan folder sampah',
     'Extract package immediately after uploaded.' => 'Ekstrak paket segera setelah terunggah.',
     'Latest %s' => '%s Terakhir',
-    'Make sure that the package you want to upload is structured like this:' => 'Pastikan berkas paket yang akan Anda unggah memiliki struktur seperti ini:',
     'Message goes here...' => "Pesan di sini\u{2026}",
     'No comments yet.' => 'Belum ada komentar.',
-    'Please note that this action will first delete all of your current layout files before replacing it with the new ones.' => 'Mohon untuk diperhatikan bahwa aksi ini pertama-tama akan menghapus semua berkas tata letak yang ada saat ini sebelum kemudian akan diganti dengan yang baru.',
     'Please read the terms and conditions before using this application.' => 'Mohon baca syarat dan ketentuan sebelum menggunakan aplikasi ini.',
     'Posted by %s' => 'Diposting oleh %s',
     'Powered by %s' => 'Diberdayakan oleh %s',
@@ -269,6 +266,5 @@ return [
     'This email address will be used to receive certain messages to your inbox as the fastest solution for notifications. At this time you may not use it to receive any messages, but some extensions that require an email address may depend on this value.' => 'Alamat surel ini akan digunakan untuk menerima berbagai pesan dari situs sebagai solusi tercepat untuk memberikan notifikasi. Pada saat ini Anda mungkin tidak menggunakannya untuk menerima pesan apa-apa, tapi beberapa ekstensi yang membutuhkan alamat surel dapat memanfaatkan nilai bidang ini.',
     'This value does not determine the I18N system on your site unless you want to make an I18N extension that depends on this value.' => 'Anda memiliki ekstensi bahasa yang terpasang. Nilai ini sekarang menentukan sistem I18N pada situs Anda.',
     'Title Goes Here' => 'Judul di Sini',
-    'Written by %s' => 'Ditulis oleh %s',
-    'You may want to <a href="%s" target="_blank" title="%s">save a copy</a> of your current layout files before doing this action.' => 'Anda mungkin ingin <a href="%s" target="_blank" title="%s">menyimpan sebuah salinan</a> dari tata letak Anda saat ini sebelum memutuskan untuk menggantinya dengan yang baru.'
+    'Written by %s' => 'Ditulis oleh %s'
 ];
