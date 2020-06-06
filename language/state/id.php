@@ -257,6 +257,7 @@ return [
     'Latest %s' => '%s Terakhir',
     'Make sure that the package you want to upload is structured like this:' => 'Pastikan berkas paket yang akan Anda unggah memiliki struktur seperti ini:',
     'Message goes here...' => "Pesan di sini\u{2026}",
+    'No %s yet.' => 'Belum ada %s.',
     'No comments yet.' => 'Belum ada komentar.',
     'Please note that this action will first delete all of your current layout files before replacing it with the new ones.' => 'Mohon untuk diperhatikan bahwa aksi ini pertama-tama akan menghapus semua berkas tata letak yang ada saat ini sebelum kemudian akan diganti dengan yang baru.',
     'Please read the terms and conditions before using this application.' => 'Mohon baca syarat dan ketentuan sebelum menggunakan aplikasi ini.',
