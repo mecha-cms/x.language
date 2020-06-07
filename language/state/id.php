@@ -75,6 +75,8 @@ return [
     'Files' => 'Berkas',
     'Folder' => 'Folder',
     'Folders' => 'Folder',
+    'Image' => 'Gambar',
+    'Images' => 'Gambar',
     'Key' => 'Kunci',
     'Keys' => 'Kunci',
     'Language' => 'Bahasa',
