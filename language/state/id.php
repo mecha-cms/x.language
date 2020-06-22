@@ -234,6 +234,7 @@ return [
     'Folder %s successfully updated.' => 'Folder %s berhasil diperbarui.',
     'Invalid %s format.' => 'Format %s tidak valid.',
     'Invalid token.' => 'Token tidak valid.',
+    'Invalid user or pass.' => 'Pengguna atau kunci yang Anda berikan tidak valid.',
     'Logged in.' => 'Berhasil masuk.',
     'Logged out.' => 'Berhasil keluar.',
     'Maximum file size allowed to upload is %s.' => 'Ukuran berkas maksimal untuk diunggah adalah %s.',
