@@ -30,7 +30,7 @@ return [
     'September' => 'September',
     'October' => 'Oktober',
     'November' => 'November',
-    'December' => 'December',
+    'December' => 'Desember',
 
     // Day
     'Sunday' => 'Minggu',
