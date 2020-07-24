@@ -4,7 +4,9 @@ Internationalization Extension for Mecha
 Release Notes
 -------------
 
+### 1.1.1
 
+ - Added more translation items.
 
 ### 1.1.0
 
