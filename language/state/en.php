@@ -10,6 +10,8 @@ return [
     'Uploading...' => "Uploading\u{2026}",
 
     // Alert(s)
+    'Failed to upload with error code: 1' => 'The uploaded file exceeds the <code>upload_max_filesize</code> directive in <code>php.ini</code>.',
+    'Failed to upload with error code: 2' => 'The uploaded file exceeds the <code>MAX_FILE_SIZE</code> directive that was specified in the <abbr title="Hyper Text Markup Language">HTML</abbr> form.',
     'Failed to upload with error code: 3' => 'The uploaded file was only partially uploaded.',
     'Failed to upload with error code: 4' => 'No file was uploaded.',
     // 'Failed to upload with error code: 5' => '?',
