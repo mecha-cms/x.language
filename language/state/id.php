@@ -300,5 +300,5 @@ return [
     'This value does not determine the I18N system on your site unless you want to make an I18N extension that depends on this value.' => 'Anda memiliki ekstensi bahasa yang terpasang. Nilai ini sekarang menentukan sistem I18N pada situs Anda.',
     'Title Goes Here' => 'Judul di Sini',
     'Written by %s' => 'Ditulis oleh %s',
-    'You may want to <a href="%s" target="_blank" title="%s">save a copy</a> of your current layout files before doing this action.' => 'Anda mungkin ingin <a href="%s" target="_blank" title="%s">menyimpan sebuah salinan</a> dari tata letak Anda saat ini sebelum memutuskan untuk menggantinya dengan yang baru.'
+    'You may want to <a href="%s" target="_blank" title="%s">save a copy</a> of your current layout files before doing this.' => 'Anda mungkin ingin <a href="%s" target="_blank" title="%s">menyimpan sebuah salinan</a> dari tata letak Anda saat ini sebelum memutuskan untuk menggantinya dengan yang baru.'
 ];
