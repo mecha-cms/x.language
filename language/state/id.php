@@ -109,6 +109,8 @@ return [
     'Passes' => 'Sandi',
     'Path' => 'Jalur',
     'Paths' => 'Jalur',
+    'Post' => 'Posting',
+    'Posts' => 'Posting',
     'Route' => 'Rute',
     'Routes' => 'Rute',
     'Site' => 'Situs',
