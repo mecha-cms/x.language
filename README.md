@@ -1,10 +1,10 @@
-Internationalization Extension for Mecha
-========================================
+Internationalization Extension for [Mecha](https://github.com/mecha-cms/mecha)
+==============================================================================
 
 Release Notes
 -------------
 
-### 1.1.1
+### 1.1.2
 
  - Added more translation items.
 
