@@ -91,8 +91,8 @@ return [
     'Licenses' => 'Lisensi',
     'Link' => 'Tautan',
     'Links' => 'Tautan',
-    'Locale' => 'Lokalitas',
-    'Locales' => 'Lokalitas',
+    'Locale' => 'Lokal',
+    'Locales' => 'Lokal',
     'Log In' => 'Masuk Log',
     'Log Out' => 'Keluar Log',
     'Log' => 'Catatan',
@@ -187,6 +187,7 @@ return [
     'Share' => 'Bagikan',
     'Sharing' => 'Berbagi',
     'Table of Contents' => 'Tabel Konten',
+    'Test' => 'Tes',
     'Update as %s' => 'Perbarui sebagai %s',
     'Update' => 'Perbarui',
     'Upload' => 'Unggah',
@@ -203,6 +204,18 @@ return [
     '0 Replies' => '0 Balasan',
     '1 Comment' => '1 Komentar',
     '1 Reply' => '1 Balasan',
+
+    // File Counter
+    '%d File' => '%d Berkas',
+    '%d Files' => '%d Berkas',
+    '0 File' => '0 Berkas',
+    '1 File' => '1 Berkas',
+
+    // Folder Counter
+    '%d Folder' => '%d Folder',
+    '%d Folders' => '%d Folder',
+    '0 Folder' => '0 Folder',
+    '1 Folder' => '1 Folder',
 
     // View Counter
     '%d View' => '%d Kali Dilihat',
