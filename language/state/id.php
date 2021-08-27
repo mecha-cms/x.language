@@ -181,6 +181,7 @@ return [
     'Publish' => 'Publikasikan',
     'Refresh' => 'Segarkan',
     'Reject' => 'Tolak',
+    'Remove' => 'Remove',
     'Replace' => 'Ganti',
     'Reply' => 'Balas',
     'Restore' => 'Kembalikan',
