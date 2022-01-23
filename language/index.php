@@ -4,17 +4,17 @@ $id = $state->language;
 $files = [];
 
 // Queue default translation item(s) from this extension
-if (is_file($file = __DIR__ . DS . 'state' . DS . $id . '.php')) {
+if (is_file($file = __DIR__ . D . 'state' . D . $id . '.php')) {
     $files[] = $file;
 }
 
 // Queue custom translation item(s) from third party extension(s)
-foreach (glob(__DIR__ . DS . '..' . DS . '*' . DS . 'lot' . DS . 'language' . DS . $id . '.php', GLOB_NOSORT) as $file) {
+foreach (glob(__DIR__ . D . '..' . D . '*' . D . 'lot' . D . 'language' . D . $id . '.php', GLOB_NOSORT) as $file) {
     $files[] = $file;
 }
 
 // Queue custom translation item(s) from third party layout
-if (is_file($file = __DIR__ . DS . '..' . DS . '..' . DS . 'layout' . DS . 'language' . DS . $id . '.php')) {
+if (is_file($file = __DIR__ . D . '..' . D . '..' . D . 'layout' . D . 'language' . D . $id . '.php')) {
     $files[] = $file;
 }
 
