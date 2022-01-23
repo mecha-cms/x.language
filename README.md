@@ -4,6 +4,10 @@ Internationalization Extension for [Mecha](https://github.com/mecha-cms/mecha)
 Release Notes
 -------------
 
+### 2.0.0
+
+ - [x] Updated for Mecha 3.0.0.
+
 ### 1.1.3
 
  - Added more translation items.
