@@ -13,14 +13,14 @@ foreach (glob(__DIR__ . D . '..' . D . '*' . D . 'lot' . D . 'language' . D . $i
     $files[] = $file;
 }
 
-// Queue custom translation item(s) from third party layout
-if (is_file($file = __DIR__ . D . '..' . D . '..' . D . 'layout' . D . 'language' . D . $id . '.php')) {
+// Queue custom translation item(s) from third party layout(s)
+if (is_file($file = __DIR__ . D . '..' . D . '..' . D . 'y' . D . '*' . D . 'language' . D . $id . '.php')) {
     $files[] = $file;
 }
 
 // Load and merge translation item(s) from queue
 foreach ($files as $file) {
-    $data = (function($f) {
+    $data = (static function($f) {
         extract($GLOBALS, EXTR_SKIP);
         return (array) require $f;
     })($file);
