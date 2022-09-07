@@ -20,7 +20,7 @@ if (is_file($file = __DIR__ . D . '..' . D . '..' . D . 'y' . D . '*' . D . 'lan
 
 // Load and merge translation item(s) from queue
 foreach ($files as $file) {
-    $data = (static function($f) {
+    $data = (static function ($f) {
         extract($GLOBALS, EXTR_SKIP);
         return (array) require $f;
     })($file);
