@@ -1,0 +1,5 @@
+{
+  "description": "Changes phrases automatically according to the preferred language.",
+  "license": "GPL-3.0-or-later",
+  "name": "mecha-cms/x.language"
+}
