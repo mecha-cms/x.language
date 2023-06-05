@@ -8,13 +8,11 @@ if (is_file($file = __DIR__ . D . 'state' . D . $id . '.php')) {
     $files[] = $file;
 }
 
-// Queue custom translation item(s) from third party extension(s)
-foreach (glob(__DIR__ . D . '..' . D . '*' . D . 'lot' . D . 'language' . D . $id . '.php', GLOB_NOSORT) as $file) {
-    $files[] = $file;
-}
-
-// Queue custom translation item(s) from third party layout(s)
-if (is_file($file = __DIR__ . D . '..' . D . '..' . D . 'y' . D . '*' . D . 'language' . D . $id . '.php')) {
+// Queue custom translation item(s) from third party extension(s) and layout(s)
+foreach (glob(LOT . D . '{x,y}' . D . '*' . D . 'language' . D . $id . '.php', GLOB_BRACE | GLOB_NOSORT) as $file) {
+    if (!is_file(dirname($file, 2) . D . 'index.php')) {
+        continue;
+    }
     $files[] = $file;
 }
 

@@ -5,8 +5,11 @@
 return [
 
     // Action(s)
+    'Load...' => "Load\u{2026}",
     'Loading...' => "Loading\u{2026}",
+    'Search...' => "Search\u{2026}",
     'Searching...' => "Searching\u{2026}",
+    'Upload...' => "Upload\u{2026}",
     'Uploading...' => "Uploading\u{2026}",
 
     // Alert(s)
