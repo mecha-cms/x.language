@@ -246,6 +246,7 @@ return [
     '%s %s successfully moved to trash.' => '%s %s berhasil dipindahkan ke tempat sampah.',
     '%s %s successfully restored.' => '%s %s berhasil dikembalikan.',
     '%s %s successfully updated.' => '%s %s berhasil diperbarui.',
+    '%s does not exist.' => '%s tidak ada.',
     '%s too long.' => '%s terlalu panjang.',
     '%s too short.' => '%s terlalu singkat.',
     'A new %s has been added.' => 'Sebuah %s baru telah ditambahkan.',
