@@ -1,5 +1,10 @@
 <?php
 
-// French
+return [
 
-return [];
+    '.description' => null,
+    '.title' => 'French',
+
+    'French' => 'Français'
+
+];

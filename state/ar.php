@@ -1,5 +1,10 @@
 <?php
 
-// Arabic
+return [
 
-return [];
+    '.description' => null,
+    '.title' => 'Arabic',
+
+    'Arabic' => 'عربي'
+
+];

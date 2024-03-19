@@ -1,8 +1,20 @@
 <?php
 
-// Indonesian
-
 return [
+
+    '.description' => null,
+    '.title' => 'Indonesian',
+
+    // Language
+    'Arabic' => 'Arab',
+    'Chinese' => 'China',
+    'English' => 'Inggris',
+    'French' => 'Prancis',
+    'German' => 'Jerman',
+    'Indonesian' => 'Indonesia',
+    'Japanese' => 'Jepang',
+    'Russian' => 'Rusia',
+    'Spanish' => 'Spanyol',
 
     // Common
     'Admin' => 'Admin',

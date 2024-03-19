@@ -1,8 +1,9 @@
 <?php
 
-// English
-
 return [
+
+    '.description' => null,
+    '.title' => 'English',
 
     // Action(s)
     'Load...' => "Load\u{2026}",

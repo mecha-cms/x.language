@@ -5,7 +5,7 @@ icon: 'M12.87,15.07L10.33,12.56L10.36,12.53C12.1,10.59 13.34,8.36 14.07,6H17V4H1
 color: '#00248b'
 author: Taufik Nurrohman
 type: Markdown
-version: 2.0.0
+version: 2.1.0
 ...
 
 Translation data will be focused on `.\lot\x\language\state\id.php` file. If you want to contribute, be sure to follow
@@ -22,3 +22,7 @@ return [
     'language' => 'id' // Change site language to “Indonesian”
 ];
 ~~~
+
+### JavaScript API
+
+_TODO_

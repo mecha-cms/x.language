@@ -1,5 +1,10 @@
 <?php
 
-// Chinese
+return [
 
-return [];
+    '.description' => null,
+    '.title' => 'Chinese',
+
+    'Chinese' => '中文'
+
+];

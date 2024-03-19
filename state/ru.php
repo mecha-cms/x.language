@@ -1,5 +1,10 @@
 <?php
 
-// Russian
+return [
 
-return [];
+    '.description' => null,
+    '.title' => 'Russian',
+
+    'Russian' => 'русский'
+
+];
