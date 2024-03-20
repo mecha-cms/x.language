@@ -208,11 +208,11 @@ return [
     'Save as %s' => 'Simpan sebagai %s',
     'Save to %s' => 'Simpan ke %s',
     'Save' => 'Simpan',
-    'Search in %s' => 'Telusuri dalam %s',
-    'Search' => 'Telusuri',
-    'Search...' => "Telusuri\u{2026}",
-    'Searching' => 'Menelusuri',
-    'Searching...' => "Menelusuri\u{2026}",
+    'Search in %s' => 'Telusur dalam %s',
+    'Search' => 'Telusur',
+    'Search...' => "Telusur\u{2026}",
+    'Searching' => 'Menelusur',
+    'Searching...' => "Menelusur\u{2026}",
     'Share' => 'Bagikan',
     'Sharing' => 'Berbagi',
     'Table of Contents' => 'Tabel Konten',
@@ -325,6 +325,11 @@ return [
     'Your %s is %s.' => 'Nilai %s Anda adalah %s.',
     'Your comment will be visible once approved by the author.' => 'Komentar Anda akan tampil setelah disetujui oleh penulis.',
 
+    // Pager(s)
+    'Go to page %d (you are here)' => 'Ke laman %s (Anda berada di sini)',
+    'Go to page %d' => 'Ke laman %s',
+    'Go to the %s page' => 'Ke laman %s',
+
     // Sentence(s)
     '%s goes here...' => "%s di sini\u{2026}",
     'Choose default page that will open after logged-in.' => 'Pilih laman utama yang akan terbuka setelah log masuk.',
@@ -361,6 +366,7 @@ return [
     'Posted by %s' => 'Diposting oleh %s',
     'Powered by %s' => 'Diberdayakan oleh %s',
     'Protect this page by adding a secret question that can only be answered by the visitors to which you have been told the answer. The question and hint fields are optional. You can also just provide a text input to write the secret answer without asking any questions.' => 'Lindungi laman ini dengan cara menambahkan pertanyaan rahasia yang hanya bisa dijawab oleh para pengunjung yang telah Anda beri jawabannya. Bidang pertanyaan dan petunjuk bersifat opsional. Anda juga bisa sekadar memberikan masukan teks untuk menulis jawaban rahasia tanpa menanyakan apa-apa.',
+    'Random %s' => '%s Acak',
     'Recent %s' => '%s Terbaru',
     'Redirect to folder' => 'Arahkan ke folder',
     'Remove this comment' => 'Singkirkan komentar ini',

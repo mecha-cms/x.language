@@ -1,38 +1,69 @@
 <?php
 
 namespace {
-    $files = [];
-    $name = $state->language ?? \P;
-    // Queue default translation item(s) from this extension
-    if (\is_file($v = __DIR__ . \D . 'state' . \D . $name . '.php')) {
-        $files[] = $v;
-    }
-    // Queue custom translation item(s) from third party extension(s) and layout(s)
-    foreach (\glob(\LOT . \D . '{x,y}' . \D . '*' . \D . 'language' . \D . $name . '.php', \GLOB_BRACE | \GLOB_NOSORT) as $v) {
-        if (!\is_file(\dirname($v, 2) . \D . 'index.php')) {
-            continue;
-        }
-        $files[] = $v;
-    }
-    // Load and merge translation item(s) in queue
-    foreach ($files as $file) {
-        $data = \fire(function () {
-            \extract(\lot());
-            return (array) require $this->path;
-        }, [], (object) ['path' => $file]);
-        // Automatic lower-case mode
-        foreach ($data as $k => $v) {
-            $kk = \strtolower($k);
-            if ($k === $kk) {
+    function language(): array {
+        $languages = [];
+        foreach (\explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? "") as $v) {
+            if (false === \strpos($v = \trim($v), ';')) {
+                $languages[$v] = 1.0;
                 continue;
             }
-            $data[$kk] = \l($v);
+            $any = \explode(';', $v);
+            $language = \trim(\array_shift($any));
+            $order = 1.0;
+            foreach ($any as $vv) {
+                if (0 === \strpos($vv = \trim($vv), 'q=')) {
+                    $order = (float) \substr($vv, 2);
+                    break;
+                }
+            }
+            $languages[$language] = $order;
         }
-        \lot('I', \array_replace(\lot('I') ?? [], $data));
+        \arsort($languages);
+        return $languages;
     }
+    \lot('I', \x\language\get(\explode(',', (string) $state->language ?? \P))[1]);
 }
 
 namespace x\language {
+    function get(array $names) {
+        $files = [];
+        $lot = (array) \lot('I');
+        foreach ($names as $k => $v) {
+            if (!\is_file($v = __DIR__ . \D . 'state' . \D . $v . '.php')) {
+                unset($names[$k]);
+                continue;
+            }
+            // Queue language item(s) from this extension
+            $files[] = $v;
+            // Queue language item(s) from other extension(s) and layout(s)
+            foreach (\glob(\LOT . \D . '{x,y}' . \D . '*' . \D . 'language' . \D . $v . '.php', \GLOB_BRACE | \GLOB_NOSORT) as $vv) {
+                if (!\is_file(\dirname($vv, 2) . \D . 'index.php')) {
+                    continue;
+                }
+                $files[] = $vv;
+            }
+        }
+        if (!$files) {
+            return $lot;
+        }
+        // Load and merge language item(s) in queue
+        foreach ($files as $file) {
+            $lot = \array_replace($lot, \fire(function () {
+                \extract(\lot());
+                return (array) require $this->path;
+            }, [], (object) ['path' => $file]));
+            // Automatic lower-case mode
+            foreach ($lot as $k => $v) {
+                $kk = \strtolower($k);
+                if ($k === $kk) {
+                    continue;
+                }
+                $lot[$kk] = \l($v);
+            }
+        }
+        return [$names, $lot];
+    }
     function route($content, $path) {
         if (null !== $content) {
             return $content;
@@ -45,43 +76,18 @@ namespace x\language {
             return $content;
         }
         \extract(\lot(), \EXTR_SKIP);
-        $files = $lot = [];
         $fire = $_GET['fire'] ?? null;
-        $names = \explode(',', $_GET['name'] ?? $state->language ?? 'en');
-        foreach ($names as $name) {
-            if (!\is_file($v = __DIR__ . \D . 'state' . \D . $name . '.php')) {
-                continue;
-            }
-            $files[] = $v;
-            foreach (\glob(\LOT . \D . '{x,y}' . \D . '*' . \D . 'language' . \D . $name . '.php', \GLOB_BRACE | \GLOB_NOSORT) as $v) {
-                if (!\is_file(\dirname($v, 2) . \D . 'index.php')) {
-                    continue;
-                }
-                $files[] = $v;
-            }
-        }
-        foreach ($files as $file) {
-            $lot = \array_replace($lot, \fire(function () {
-                \extract(\lot());
-                return (array) require $this->path;
-            }, [], (object) ['path' => $file]));
-            foreach ($lot as $k => $v) {
-                $kk = \strtolower($k);
-                if ($k === $kk) {
-                    continue;
-                }
-                $lot[$kk] = \l($v);
-            }
-        }
+        $languages = \array_merge(\explode(',', (string) ($_GET['name'] ?? $state->language ?? 'en')), \array_keys(\language()));
+        [$names, $lot] = get($languages = \array_unique($languages));
         $r = [
             'alert' => [],
             'count' => 0,
             'description' => $lot['.description'] ?? null,
             'lot' => [],
-            'name' => \end($names), // The last name
+            'name' => $name = \end($names) ?: null, // The last name
             'names' => $names,
             'status' => 404,
-            'title' => $lot['.title'] ?? \end($names)
+            'title' => $lot['.title'] ?? $name
         ];
         unset($lot['.description'], $lot['.title']);
         if ($lot) {
