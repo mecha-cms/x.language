@@ -22,11 +22,10 @@ namespace {
         \arsort($languages);
         return $languages;
     }
-    \lot('I', \x\language\get(\explode(',', (string) $state->language ?? \P))[1]);
 }
 
 namespace x\language {
-    function get(array $names) {
+    function of(array $names) {
         $files = [];
         $lot = (array) \lot('I');
         foreach ($names as $k => $v) {
@@ -78,7 +77,7 @@ namespace x\language {
         \extract(\lot(), \EXTR_SKIP);
         $fire = $_GET['fire'] ?? null;
         $languages = \array_merge(\explode(',', (string) ($_GET['name'] ?? $state->language ?? 'en')), \array_keys(\language()));
-        [$names, $lot] = get($languages = \array_unique($languages));
+        [$names, $lot] = of($languages = \array_unique($languages));
         $r = [
             'alert' => [],
             'count' => 0,
@@ -120,5 +119,10 @@ namespace x\language {
         ]);
         return ($fire ? $fire . '(' : "") . $content . ($fire ? ');' : "");
     }
+    function set() {
+        \extract(\lot());
+        \lot('I', of(\explode(',', (string) $state->language ?? \P))[1]);
+    }
     \Hook::set('route', __NAMESPACE__ . "\\route", 1);
+    \Hook::set('set', __NAMESPACE__ . "\\set", 1);
 }
