@@ -2,8 +2,8 @@
 
 return [
 
-    '.description' => null,
-    '.title' => 'Chinese',
+    '[description]' => null,
+    '[title]' => 'Chinese',
 
     'Chinese' => '中文'
 

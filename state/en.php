@@ -2,8 +2,8 @@
 
 return [
 
-    '.description' => null,
-    '.title' => 'English',
+    '[description]' => null,
+    '[title]' => 'English',
 
     // Action(s)
     'Load...' => "Load\u{2026}",

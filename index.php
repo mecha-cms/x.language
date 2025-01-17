@@ -88,7 +88,7 @@ namespace x\language {
             'status' => 404,
             'title' => $lot['.title'] ?? $name
         ];
-        unset($lot['.description'], $lot['.title']);
+        unset($lot['[description]'], $lot['[title]']);
         if ($lot) {
             $r['alert']['success'][] = \i('Success.');
             $r['count'] = \count($lot);
