@@ -37,7 +37,7 @@ namespace x\language {
             $files[] = $file;
             // Queue language item(s) from other extension(s) and layout(s)
             foreach (\glob(\LOT . \D . '{x,y}' . \D . '*' . \D . 'language' . \D . $v . '.php', \GLOB_BRACE | \GLOB_NOSORT) as $file) {
-                if (!\is_file(\dirname($vv, 2) . \D . 'index.php')) {
+                if (!\is_file(\dirname($file, 2) . \D . 'index.php')) {
                     continue;
                 }
                 $files[] = $file;
