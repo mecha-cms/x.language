@@ -29,22 +29,22 @@ namespace x\language {
         $files = [];
         $lot = (array) \lot('I');
         foreach ($names as $k => $v) {
-            if (!\is_file($v = __DIR__ . \D . 'state' . \D . $v . '.php')) {
+            if (!\is_file($file = __DIR__ . \D . 'state' . \D . $v . '.php')) {
                 unset($names[$k]);
                 continue;
             }
             // Queue language item(s) from this extension
-            $files[] = $v;
+            $files[] = $file;
             // Queue language item(s) from other extension(s) and layout(s)
-            foreach (\glob(\LOT . \D . '{x,y}' . \D . '*' . \D . 'language' . \D . $v . '.php', \GLOB_BRACE | \GLOB_NOSORT) as $vv) {
+            foreach (\glob(\LOT . \D . '{x,y}' . \D . '*' . \D . 'language' . \D . $v . '.php', \GLOB_BRACE | \GLOB_NOSORT) as $file) {
                 if (!\is_file(\dirname($vv, 2) . \D . 'index.php')) {
                     continue;
                 }
-                $files[] = $vv;
+                $files[] = $file;
             }
         }
         if (!$files) {
-            return $lot;
+            return [$names, $lot];
         }
         // Load and merge language item(s) in queue
         foreach ($files as $file) {
